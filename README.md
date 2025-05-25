@@ -1,12 +1,10 @@
-# React + Vite
+작은 규모의 프로젝트에서는 Zustand를 사용하는 게 적절하다고 생각했습니다.
+왜냐하면 redux나 recoil과 같은 다른 라이브러리에 비해 코드 복잡도가 상대적으로 낮기 때문입니다. 따라서 좋아요 기능과 팀원과 관련된 데이터는 Zustand를 사용해서 상태 관리했습니다. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+mockAPI를 사용해서 React Query로 기존 멤버 정보를 받아왔습니다. mockAPI로는 제가 직접 JSON을 작성할 수 없어서 name, position, tags(국가이름) 으로 user의 데이터를 받아왔습니다. 
 
-Currently, two official plugins are available:
+다크 모드 구현의 경우 context API를 사용했으며, 모달의 경우 styled-components로 디자인 적용했습니다. 그리고 닫기 버튼 혹은 유저 카드를 클릭할 시에 사라지거나 생겨나는 모달에 애니메이션 (fade in/out)을 적용시켜 동작의 자연스러움을 더했습니다. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+프로젝트를 진행하면서 각 컴포넌트 별로 기능을 명확하게 지정해야겠다고 생각했습니다. 하나의 컴포넌트 안에 여러 동작이 들어가면 전반적인 코드의 흐름을 이해하는 데 시간이 매우 걸린다고 느껴졌기 때문입니다. 
+ 
+# React + Vite를 사용해서 개발을 진행했습니다. 
