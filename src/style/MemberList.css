@@ -1,0 +1,35 @@
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: flex-start	;
+  margin-top: 80px;
+  padding-left: 185px;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 350px;
+  height: 200px;
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-4px);
+}
+
+.member-card h3 {
+  margin-bottom: 8px;
+}
+
+.member-card p {
+  margin: 4px 0;
+}
+
+.member-card {
+  color: black;
+}
